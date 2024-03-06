@@ -13,7 +13,7 @@ import PlacePage from "./pages/PlacePage";
 import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
-defaults.baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+axios.defaults.baseURL = import.meta.env.VITE_REACT_APP_API_URL || "http://localhost:4000";
 axios.defaults.withCredentials = true;
 
 function App() {
